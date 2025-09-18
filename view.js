@@ -6,12 +6,17 @@ function updateView(){
     <div class="header"><h1>notes</h1></div>
     <div></div>
     <div class="menu">
-    <b>menu:</b><br>
-
+    <b>codeAcademy:</b><br>
     <button onclick="falsyHtml()">falsy/truthy</button><br>
     <button onclick="ifElseHtml()">if/else etc</button><br>
     <button onclick="funksjonerHtml()">functions</button><br>
     <button onclick="clearContent()">clear</button><br>
+    <br>
+    <b>skillShare:</b> <br>
+    <button>incoming</button> <br>
+    <br>
+    <b>Moodle:</b> <br>
+    <button>incoming</button><br>
     </div> 
     <div class="mainContent">
     
@@ -29,8 +34,10 @@ function updateView(){
     </section>
     </div>
     
+    <div class="rightMargin"></div>
+    <div class="leftMargin"></div>
 
-    <div class="footer"></div>
+    <div class="footer">latest update: 18.09.2025</div>
     `;
 
     app.innerHTML = html;

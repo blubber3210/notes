@@ -8,11 +8,11 @@ body {
 div.container {
     display: grid; 
     height: 100vh;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr auto auto 1fr;
     grid-template-rows: auto 1fr 25px;
-    grid-template-areas:    'header header'
-                            'menu mainContent'
-                            'footer footer'
+    grid-template-areas:    'header header header header'
+                            'leftMargin menu mainContent rightMargin'
+                            'footer footer footer footer'
                             ;
 }
 
@@ -37,6 +37,7 @@ div.mainContent {
     border-radius: 10px;
     border: black solid 2px;
     padding-right: 5px;
+    max-width: 600px;
 }
 
 div.activeNotes {
@@ -45,6 +46,15 @@ div.activeNotes {
 
 div.footer {
     grid-area: footer;
+    text-align: center;
+}
+
+div.rightMargin {
+    grid-area: rightMargin;
+}
+
+div.leftMargin {
+    grid-area: leftMargin;
 }
 
 h1 {
