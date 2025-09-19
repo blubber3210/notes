@@ -3,7 +3,7 @@ const app = document.getElementById("app");
 updateView();
 function updateView(){
     let html =/*HTML*/ `
-    <div class="header"><h1>cheasheet</h1></div>
+    <div class="header"><h1>cheatsheet</h1></div>
     <div></div>
     <div class="menu">
     <b>codeAcademy:</b><br>
