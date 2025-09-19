@@ -39,7 +39,7 @@ function updateView(){
     <div class="rightMargin"></div>
     <div class="leftMargin"></div>
 
-    <div class="footer">latest update: 19.09.2025</div>
+    <div class="footer">latest update: 19.09.2025 by Lidus</div>
     `;
 
     app.innerHTML = html;

@@ -58,10 +58,10 @@ div.leftMargin {
 }
 
 h1 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:monospace;
     font-size: 40px;
     color:rgb(59, 9, 9);
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     text-shadow: darkkhaki 2px 2px, darksalmon 4px 3px;
 }
 
