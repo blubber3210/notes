@@ -3,20 +3,23 @@ const app = document.getElementById("app");
 updateView();
 function updateView(){
     let html =/*HTML*/ `
-    <div class="header"><h1>notes</h1></div>
+    <div class="header"><h1>cheasheet</h1></div>
     <div></div>
     <div class="menu">
     <b>codeAcademy:</b><br>
     <button onclick="falsyHtml()">falsy/truthy</button><br>
     <button onclick="ifElseHtml()">if/else etc</button><br>
     <button onclick="funksjonerHtml()">functions</button><br>
-    <button onclick="clearContent()">clear</button><br>
+    
     <br>
     <b>skillShare:</b> <br>
     <button>incoming</button> <br>
     <br>
     <b>Moodle:</b> <br>
-    <button>incoming</button><br>
+    <button onclick="gridsHtml()">grids</button><br>
+    <br>
+    <b>-</b><br>
+    <button onclick="clearContent()">clear</button><br>
     </div> 
     <div class="mainContent">
     
@@ -24,7 +27,6 @@ function updateView(){
 
     <div class="activeNotes">
     ${scopeBlockHtml()}
-    ${gridsHtml()}
     </div>
 
     <section>
@@ -148,21 +150,53 @@ function scopeBlockHtml(){
 function gridsHtml(){
     let html = `
     <section>
-    <b>flex</b> <br>
-        <p>
-            flex: wrap, direction, justify-content. align-items: stretch (!! den kunne jeg brukt)
-        </p>
-        <p></p> 
-        <p></p>
-
-        <p><b>grid</b></p>
-        <p>
-        
-        </p>
-        <p></p> 
-        <p></p> 
+    <b>responsive web-design</b> <br>
+    <p>
+    vh = view hight<br>
+    vw = view width<br>
+    sett body til 0 på padding og margin - den har en automatisk value <br>
+    Så kan du sette view hight og width til 100. <br>
+    </p>
     
+    <p> 
+    <span>grid-template-areas:</span> (til container) <br>
+    <span>grid-area:</span> (til barna) <br>
+    eksempel: <br> 
+    <span> 
+    grid template areas: 'header header' 'menu mainContent' 'menu footer'; </span><br>
+    denne lager tre rader - en med bare header, en med menu og mainContent, og en med menu og footer. 
+    Nå deler den alt helt likt. <br>
+    For å bestemme hvordan det skal se ut og hvor mye plass: <br>
+    <span>
+    grid-template-columns: 1fr 3fr; <br>
+    grid-template-rows: 1fr 10fr 1fr; </span><br> 
+    note: fordi grid areas har 2 elementer i hver rad og 3 rader, så har 
+    man 2 column fractions og 3 row fractions. <br>
+    Man kan bruke pixel og fractions i samme linje her. altså: <br>
+    <span>
+    grid-template-columns: 200px 1fr; <br>
+    grid-template-rows: 20px 10fr 20px; <br> 
+    </span>
 
+    Videre så kan man bruke media-tag. <br>
+    - den skal helst være nederst i CSS, alt over er default. <br>
+    eksempel: <br>
+    <span>
+    @media only screen and (max-width: 600 px){ <br>
+    div.container { <br>
+        grid-template-columns: 1fr; <br>
+        grid-template-rows: 20px 1fr 4fr 20px; <br>
+        grid-template-areas:    'header' <br>
+                                'menu' <br>
+                                'mainContent'<br>
+                                'footer'; <br>
+    }}<br>
+    </span>
+    note: bare en fr i columns fordi man nå har bare en dings i areas pr rad når den blir under 600px.
+    </p>
+
+    <!-- <button onclick="showImage()">se et screenshot av eksempel</button> -->
+    <div class="popup"><img src="bilder/screenshot-grids.png" alt="screenshot-grids" width="300"></div>
     </section>
     <section class="flexExample">
         <div class="gridDiv" style="flex-grow: 10;">Here is a div</div>
@@ -178,5 +212,6 @@ function gridsHtml(){
         <div class="gridDiv">Here is a div</div>
     </section>
     `;
-    return html;
+    content = html;
+    updateView();
 }

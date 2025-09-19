@@ -90,6 +90,13 @@ section {
     background-color: antiquewhite;
 }
 
+/* .popup {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+
+} */
+
 div.gridDiv {
     border: grey solid 2px;
     margin: 5px;
