@@ -34,14 +34,11 @@ div.menu {
 div.mainContent {
     grid-area: mainContent;
     background-color: darksalmon;
+    margin-right: 5px;
     border-radius: 10px;
     border: black solid 2px;
     padding-right: 5px;
     max-width: 600px;
-}
-
-div.activeNotes {
-    grid-area: activeNotes;
 }
 
 div.footer {
@@ -58,7 +55,7 @@ div.leftMargin {
 }
 
 h1 {
-    font-family:monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     color:rgb(59, 9, 9);
     /* text-transform: capitalize; */
@@ -80,6 +77,7 @@ button {
 button:hover {
     cursor: pointer;
     border: black 2px solid;
+    background-color: darksalmon;
 }
 
 section {
@@ -88,6 +86,10 @@ section {
     margin: 5px;
     padding: 10px;
     background-color: antiquewhite;
+}
+
+div.activeNotes {
+    grid-area: activeNotes;
 }
 
 /* .popup {
@@ -112,4 +114,138 @@ section.flexExample{
 section.gridExample {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+/* string methods */
+
+div.textbox {
+    background-color: white;
+    border: black solid 1px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+    height: 50px;
+    padding: 2px;
+}
+
+div.textboxButtons {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+    padding: 2px;
+}
+
+button.otherButtons {
+    background-color: white;
+    font-weight: normal;
+    border: black 1px solid;
+}
+
+button.otherButtons:hover {
+    background-color: darkkhaki;
+}
+
+/* font examples */
+
+span.font1 {
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:normal;
+}
+
+span.font2 {
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:normal;
+}
+
+span.font3 {
+    background-color: antiquewhite;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:normal;
+}
+
+span.font4 {
+    background-color: antiquewhite;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:normal;
+}
+
+span.font5 {
+    background-color: antiquewhite;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:normal;
+}
+
+span.font6 {
+    background-color: antiquewhite;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:normal;
+}
+
+span.font7 {
+    background-color: antiquewhite;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:normal;
+}
+
+span.font8 {
+    background-color: antiquewhite;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+}
+
+span.font9 {
+    background-color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:normal;
+}
+
+span.font10 {
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:normal;
+}
+
+span.font11 {
+    background-color: antiquewhite;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:normal;
+}
+
+span.font12 {
+    background-color: antiquewhite;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:normal;
+}
+
+span.font13 {
+    background-color: antiquewhite;
+    font-family: cursive;
+    font-weight:normal;
+}
+
+span.font14 {
+    background-color: antiquewhite;
+    font-family:fantasy; 
+    font-weight:normal;
+}
+
+span.font15 {
+    background-color: antiquewhite;
+    font-family:monospace;
+    font-weight:normal;
+}
+
+span.font16 {
+    background-color: antiquewhite;
+    font-family:sans-serif;
+    font-weight:normal;
+}
+
+span.font17 {
+    background-color: antiquewhite;
+    font-family:serif;
+    font-weight:normal;
 }
