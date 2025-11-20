@@ -38,7 +38,7 @@ function drawHeader(){
 }
 
 function drawFooter(){
-    let html = `latest update: 22.09.2025 by Lidus`;
+    let html = `latest update: 20.11.2025 by Lidus`;
 
     return html;
 }
