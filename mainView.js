@@ -4,7 +4,7 @@ updateView();
 function updateView(){
     let content = ``
 
-    if(model.app.currentPage == 'jsPage'){
+    if (model.app.currentPage == 'jsPage'){
         content = drawJSView();
     } else if (model.app.currentPage == 'cSharpPage'){
         content = drawCSharpPage();
