@@ -1,9 +1,8 @@
 const app = document.getElementById("app");
 
-updateView();
-function updateView(){
+
+function drawJSView(){
     let html =/*HTML*/ `
-    <div class="header"><h1>cheatsheet</h1></div>
     <div></div>
     <div class="menu">
     <b>examples</b><br>
@@ -33,7 +32,7 @@ function updateView(){
 
     <div class="activeNotes">
 
-    ${scopeBlockHtml()}
+    ${scopeHtml()}
 
     </div>
 
@@ -48,10 +47,10 @@ function updateView(){
     <div class="rightMargin"></div>
     <div class="leftMargin"></div>
 
-    <div class="footer">latest update: 22.09.2025 by Lidus</div>
+    
     `;
 
-    app.innerHTML = html;
+    return html;
 }
 
 function createButtonsHtml(){
@@ -143,12 +142,38 @@ function funksjonerHtml(){
     updateView();
 }
 
-function scopeBlockHtml(){
+function scopeHtml(){
     let html = `
     <section>
-    <b>scope and blocks</b>
+    <b>Scope</b>
     <p>
-    <span>block:</span> exists in a function or in an if/else statement - found inside curly brackets {}.<br>
+    There are three types of scope: <br>
+    <li>global scope</li>
+    <li>function scope</li>
+    <li>block scope</li>
+    </p>
+    <p>
+    <b>Global: </b>Var, let and const are all global if declared outside of a block. Global variables can be accessed from anywhere in a JS program. <br>
+    <br>
+    <b>Function: </b> Each function has their own scope. Variables defined <i>inside</i> a function are not accessible from outside the function. (Derfor kan man bruke html igjen og igjen som i denne koden). Var, let and const all have function scope when declared inside a function. <br>
+    Local variables has function scope: <br>
+    - can only be accessed from within the function <br>
+    - no scripts or functions outside the function can access them <br>
+    - variables with the same name can be used outside the function <br>
+    - variables with the same name can be used in different functions <br>
+    - local variables are created when a function starts <br>
+    - local variables are deleted when the function is completed <br>
+    - arguments (parameters) work as local variables inside functions <br>
+    <br>
+    <b>Block:</b> <br>
+    Did not exist before ES6. <br>
+    ES6 introduced two new keywords: <span>let</span> and <span>const.</span> <br>
+    <span>let</span> and <span>const</span> provide <b> Block Scope </b>. <br>
+    Variables declared with <span>let</span> and <span>const</span> inside a code block are
+    "block-scoped," meaning they are only accessibles within that block. <br>
+    This hels prevent unintended variable overwrites and promotes better code organization. <br>
+    Variables declare dwith <span>var</span> keyword cna NOT have block scope. <br>
+    They can be accessed from outside the block.
     
     </p>
     </section>

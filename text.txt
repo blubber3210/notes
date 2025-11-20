@@ -1,0 +1,9 @@
+20.11.2025: 
+    todo: 
+    - sort through css, create different classes for home page and update log
+    - double check that everything works still, and adjust model
+    - improve on everything in the javascript page (will not touch for a few months)
+    - css header, + maybe make things look a bit cleaner and maybe more professional? 
+    - make code more readable
+    - create folders for each page
+    
