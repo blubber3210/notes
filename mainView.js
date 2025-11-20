@@ -1,3 +1,4 @@
+const app = document.getElementById("app");
 
 
 updateView();
